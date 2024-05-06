@@ -10,48 +10,152 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: GrowHighByGnomgnomgnom.studio
 */
 
-/* Réinitialisation des styles */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,400;0,700;1,200&display=swap');
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------*/
+:root {
+	--font_14:0.875rem;
+	--font_16:1rem;
+	--font_30:1.875rem;
+	--font_36:2.25rem;
+	--font_48:3rem;
+	--40:2.5rem;
+	--30:1.875rem;
+	--margin_30:1.875rem;
+	--margin-54:3.375rem;
+	--margin-60:3.75rem;
+	--margin-100:6.25rem;
+	--margin-120:7.5rem;   
+}
+html {font-family: 'Inter', sans-serif;background-color:#FFF}
+body {font-family: 'Inter', sans-serif;overflow-x: hidden; background-color:#FFF; font-weight:400;font-style: normal; color: #000; font-size: var(--font_14)}
+
+
+
+h1{
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 78.94px;
+  color: #282828;
 }
 
-/* Styles de base */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #ffffff;
-    color: #333333;
+p{
+  font-weight: 100;
+  size: 30px;
+  color: #282828;
+  line-height: 34px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #222222;
-}
+li { list-style: none; }
 
 a {
-    color: #0073e6;
-    text-decoration: none;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+
+.logo{
+  height: 50px;
+  margin-left: 25px;
+  margin-top: 20%;
+}
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------*/
+
+figure{ margin: 0 }
+svg,img { max-width: 100%; height: auto; }
+.ds-boder_text{ position: relative; display: inline-block; }
+.ds-boder_text span{ position: relative; z-index: 1 }
+.ds-boder_text:after{ content: ""; position: absolute; bottom: 0; left: 0; background-color:#F26464; height: 0.9375rem; width:100%;}
+.margin-60{ margin-bottom: var(--margin-60);  }
+.padding-0{ padding-top: 0 }
+.ds-view-button{font-weight: 600; font-size: 1rem; color: #000}
+.ds-view-button i{ display: inline-block; vertical-align: middle; color: #00B7CC; font-size: 1.625rem; }
+.ds-view-button:hover{color: #00B7CC; }
+.text-left{ text-align: left; }
+.ds-arrow {background: #F26464; height:0.125rem;width:3.125rem;position: relative;cursor: pointer; display: inline-block; vertical-align: middle;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; margin-left:0.5rem}
+.ds-arrow:before, .ds-arrow:after {content: "";background: #F26464; position: absolute;height:0.125rem;width:0.8125rem;}
+.ds-arrow:before {right: -0.25rem;bottom: -0.25rem;transform: rotate(-45deg);}
+.ds-arrow:after {right: -0.25rem;top: -0.25rem;transform: rotate(45deg);}
+.ds-button-arrow:hover .ds-arrow{ margin-left:0.9375rem }
+
+.ds-back-to-home{ display: inline-block; padding:0.625rem 1.25rem; border-radius: 100%; border: 1px solid #000; font-size: 1.875rem; color: #000 }
+.ds-back-to-home:hover{ color: #000 }
+/*-----------------------------------------------------------------
+  1. >>> Headr Style
+----------------------------------------------------------------*/
+.ds-header{ mposition: fixed; top: 0; width: 100%; z-index: 5; background-color: #FFF; padding: 70px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease; }
+.ds-header.ds-fixed-header{ padding:20px 0;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
+.ds-header-inner{ display: flex; justify-content: space-between; align-items: center; }
+.ds-logo{ text-transform: uppercase; font-size: 18px; letter-spacing: 3px; color: #000; display: flex; align-items: center; }
+.ds-logo span{ display:flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: #000; border-radius: 4px; color: #FFF; font-size: 22px; font-weight: 600; text-align: center; margin-right: 12px; }
+.ds-logo:hover{ color: #000; }
+
+.ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
+.ds-social li{ margin-left: 12px; }
+.ds-social li:first-child{ margin-left: 0; }
+.ds-social li a{ display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
+.ds-social li a:hover{ color: #000; }
+.ds-social li:before{ content:  ""; }
+
+/*-----------------------------------------------------------------
+  5. >>> Footer Style
+----------------------------------------------------------------*/
+.ds-footer{ background-color: #FFF; padding:var(--margin-120) 0; }
+.ds-padding-0-about.ds-footer{ padding-top: 0 }
+.ds-lets_section h4{ color: #000;font-family: 'Inter', sans-serif; font-weight: 700; font-size:4.375rem; margin-bottom: 1.0625rem  }
+.ds-lets_section span{ color: #000; font-size:1.125rem;  }
+
+.ds-email_social{ display: flex; justify-content: space-between; align-items: center; padding:6.375rem 0; padding-bottom: 2.5rem }
+.ds-email{ color: #000; font-size: var(--font_30); font-weight: 600; display: inline-block; }
+.ds-email:hover{color: #000;}
+.ds-social{list-style: none; padding: 0; margin: 0; display: flex;}
+.ds-email_social .ds-social li{ margin-right:4rem; }
+.ds-social li:last-child{ margin-right: 0 }
+.ds-social a{ color: #797979; font-size: 2.5625rem; }
+.ds-social a:hover{ color: #000 }
+.ds-copyright{ display: block; text-align: right; color:#2B2B2B; font-size:1.125rem }
+.ds-copyright a{color:#2B2B2B;}
+.ds-copyright a:hover{color:#2B2B2B; text-decoration: underline;}
+/*-------------------------------------------------------------------------------
+ XS Style @media (max-width: 767px) 
+-------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+.row{ margin-left:0; margin-right:0  }
+.container{ padding-left:1.25rem; padding-right: 1.25rem;  }
+.ds-header{ padding:3.75rem 0  }
+.ds-heading{font-size: 2.375rem;line-height: 4rem;}
+.ds-heading-inner{font-size: 3.375rem;line-height: 6rem;}
+.ds-about-section .ds-heading-inner{ margin-bottom:3.75rem }
+.ds-about-section{ margin-top: 5.8125rem }
+.ds-case-studies-details .ds-tools{ margin-bottom: 1.875rem }
+.ds-heading span br{ display: none; }
+.ds-banner-section{ margin-bottom: var(--margin_30) }
+.ds-content-width p{width: 100%}
+.ds-lets_section h4{font-size: 3.375rem;}
+.ds-project-list{ grid-template-columns: auto; }
+
+.ds-project-list-loop:nth-child(even),.ds-project-list-loop:nth-child(odd){ margin: 0; margin-bottom:1.875rem  }
+
+.ds-case-studies-details .ds-case-studies-list{ margin-bottom: -0.25rem }
+.d-flex{ flex-wrap:wrap; }
+.ds-left-right-section section{ margin-bottom:1.875rem  }
+.ds-left-right-section{ margin-bottom:1.875rem  }
+.ds-footer{ padding-top:1.875rem }
+.ds-email_social{justify-content: center;flex-wrap: wrap; padding: 4.375rem 0}
+.ds-copyright{ text-align: center; }
+.ds-social{ margin-top: 1.25rem }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
 }
