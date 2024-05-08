@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow High</title>
-</head>
-<body>
+
       <!-- footer -->
       <footer class="ds-footer">
       <div class="container">
@@ -16,20 +9,27 @@
                   <span>Have a project or question? Send me a message.</span>
                 </section>
                 <div class="ds-email_social">
-                    <a href="mailto:gnomgnomgnom.studio@gmail.com" class="ds-email ds-boder_text"><span>gnomgnomgnom.studio@gmail.com</span></a>
+                    <a href="mailto:gnomgnomgnom.studio@gmail.com" class="ds-email ds-boder_text"><span>grow.high@gmail.com</span></a>
                     <ul class="ds-social">
                         <li><a href="#" target="_blanck"><i class="ri-youtube-line"></i></a></li>
                         <li><a href="#" target="_blanck"><i class="ri-instagram-line"></i></a></li>
                         <li><a href="#" target="_blanck"><i class="ri-twitter-line"></i></a></li>
                     </ul>
+                    <?php
+                    wp_nav_menu([
+                        'theme_location' => 'footer',
+                        'container' => false,
+                        'menu_class' => 'navbar-nav mr-auto'
+                    ])
+                    ?>
                 </div>
-                <span class="ds-copyright">© 2021 All right reserved.<br><a href="https://www.designstub.com/" target="_blanck">Template by Designstub altered by Laura Thay</span>
+                <span class="ds-copyright">© 2024 All right reserved.<br><a href="#" target="_blanck">Template by Laura Thay</span>
             </div>
           </div>
       </div>
     </footer>
     <!-- footer -->
-    <!-- Optional JavaScript; choose one of the two! -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</body>
+    </div>
+    <?php wp_footer() ?>
+    </body>
 </html>
