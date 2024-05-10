@@ -19,7 +19,7 @@
         <div class="ds-header-inner">
             <!-- logo -->
             <a href="index.html" class="ds-logo">
-            <img src="#" alt="logo" class="logo">
+            <img src="" alt="logo" class="logo">
             Grow High
             </a>
             <!-- logo -->
