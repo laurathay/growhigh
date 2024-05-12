@@ -18,10 +18,6 @@ function growhigh_register_assets () {
 
 add_action('after_setup_theme', 'growhigh_supports');
 add_action('wp_enqueue_scripts', 'growhigh_register_assets');
-// function wp_style() {
-    // Enregistrement du style CSS de Bootstrap
-//     wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/5.0.2/css/bootstrap.min.css' );
-//     wp_enqueue_style( 'style', get_stylesheet_uri() );
-// }
-// add_action( 'wp_enqueue_scripts', 'wp_style' );
+
+add_theme_support( 'woocommerce' );
 
