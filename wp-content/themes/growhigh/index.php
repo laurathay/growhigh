@@ -17,23 +17,23 @@
     	<div class="ds-slider">
         <div class="ds-slider-loop">
     			<img src="images/tulum.PNG" />
-    			<span><a href="project/yucatan.html">Monstera <i class="ri-external-link-line"></i></a></span>
+    			<span><a href="project/yucatan.html">Monstera Adansonii<i class="ri-external-link-line"></i></a></span>
     		</div>
         <div class="ds-slider-loop">
     			<img src="images/project.png" />
-    			<span><a href="illustration-project.html">Potos <i class="ri-external-link-line"></i></a></span>
+    			<span><a href="illustration-project.html">Monstera Deliciosa<i class="ri-external-link-line"></i></a></span>
     		</div>
         <div class="ds-slider-loop">
     			<img src="images/gurlz.PNG" />
-    			<span><a href="#">Plante du paradis <i class="ri-external-link-line"></i></a></span>
+    			<span><a href="#">Golden Pothos<i class="ri-external-link-line"></i></a></span>
     		</div>
     		<div class="ds-slider-loop">
     			<img src="images/girl.JPG" />
-    			<span><a href="#">Aloe Vera <i class="ri-external-link-line"></i></a></span>
+    			<span><a href="#">Neon Pothos<i class="ri-external-link-line"></i></a></span>
     		</div>
     		<div class="ds-slider-loop">
     			<img src="images/sapa.PNG" />
-    			<span><a href="#">Senseveria <i class="ri-external-link-line"></i></a></span>
+    			<span><a href="#">Scindapsus Epipremnum<i class="ri-external-link-line"></i></a></span>
     		</div>
     		<div class="ds-slider-loop">
     			<img src="images/hoian.PNG" />
